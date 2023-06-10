@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    min-width: 185px;
+    height: 170px;
+    padding: 20px;
+    border-radius: 25px;
+    .top-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        & span {
+
+            color: #7b7b9f;
+        }
+    }
+    .card-no {
+        font-size: 50px;
+        font-weight: 600;
+        color: #181823;
+    }
+    .card-sub {
+        color: #7b7b9f;
+    }
+}

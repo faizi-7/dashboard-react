@@ -1,0 +1,75 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+
+}
+.SideMidRight {
+    display: flex;
+
+}
+.Navbar {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.NavbarProfile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Sidebar {
+    flex: 2;
+    height: calc(100vh);
+    background-color: #001121;
+    position: sticky;
+    overflow: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+.Rightbar {
+    flex: 3;
+    .calender {
+        padding: 0 10px;
+    }
+    .timelineTitle {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        align-items: center;
+        .timelineHeading {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        & span {
+            font-size: 14px;
+            font-weight: 500;
+            color: #428afa;
+        }
+    }
+    .timeline {
+        padding: 12px;
+    }
+}
+.Dashboard {
+    flex: 9;
+    background-color: #e9ecf9;
+    padding-top: 20px;
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    .charts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+    }
+}
